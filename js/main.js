@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 
 	//my var
-	var sourceRef = new Firebase("https://easyed.firebaseio.com");
+	var sourceRef = new Firebase("https://easyed.firebaseio.com/");
 
 	//if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
 	var MqL = 1170;
@@ -136,11 +136,12 @@ jQuery(document).ready(function($){
 		}
 	}
 
-	/*sourceRef.on("child_added", function(snap) {
-
+	sourceRef.limitToFirst(4).on("child_added", function(snap) {
+		var atext = "<li class='has-children'><a href=''>" + snap.key() + "</a><ul class='is-hidden'>";
 		snap.forEach(function(datap){
-			datap.forEach(parseClubEvents);
+			atext += "<li><a href =''>" + datap.key() + "</a>";
 		});
-	});  */
+		$("#subject_list").append(atext + "</ul></li>")
+	}); 
 
 });

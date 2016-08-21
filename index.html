@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Resource style -->
     <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
     <!-- Modernizr -->
 
     <title>Easy Ed | Home</title>
@@ -102,111 +103,13 @@ box-shadow: -1px 6px 5px -1px rgba(209,209,209,1);">
     </main>
     <nav class="cd-nav">
         <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
-            <li id="subjects_container" class="has-children">
+            <li class="has-children">
                 <a href="#">Subjects</a>
 
-                <ul class="cd-secondary-nav is-hidden">
+                <ul id="subject_list" class="cd-secondary-nav is-hidden">
                     <li class="go-back"><a href="#0">Menu</a>
                     </li>
                     <li class="see-all"><a href="http://codyhouse.co/?p=409">View All Subjects</a>
-                    </li>
-                    <li class="has-children">
-                        <a href="mathematics/index.html">Mathematics</a>
-
-                        <ul class="is-hidden">
-                            <li class="go-back"><a href="#0">Clothing</a>
-                            </li>
-                            <li class="see-all"><a href="http://codyhouse.co/?p=409">All Accessories</a>
-                            </li>
-                            <li><a href="#0">Algebra</a>
-                            </li>
-                            <li><a href="#0">Algebra I Worked Examples</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Arithmetic</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Calculus</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Calculus/First Semester - Limits,Continuity,Derivatives</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Calculus Revisited: Single Variable Calculus</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Computational Science and Engineering I</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Convex Optimization I</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="has-children">
-                        <a href="http://codyhouse.co/?p=409">Physics</a>
-
-                        <ul class="is-hidden">
-                            <li class="go-back"><a href="#0">Clothing</a>
-                            </li>
-                            <li class="see-all"><a href="http://codyhouse.co/?p=409">All Bottoms</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Exploring Black Holes: General Relativity &amp; Astrophysics</a>
-                            </li>
-                            <li><a href="#0">Foundations of Modern Physics</a>
-                            </li>
-                            <li><a href="#0">Fundamentals of Physics</a>
-                            </li>
-                            <li><a href="#0">Fundamentals of Physics, II</a>
-                            </li>
-                            <li><a href="#0">Modern Theoretical Physics</a>
-                            </li>
-                            <li><a href="#0">Physics</a>
-                            </li>
-                            <li><a href="#0">Physics - Electronics</a>
-                            </li>
-                            <li><a href="#0">Physics for Future Presidents</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="has-children">
-                        <a href="http://codyhouse.co/?p=409">Chemistry</a>
-
-                        <ul class="is-hidden">
-                            <li><a href="http://codyhouse.co/?p=409">Atomistic Computer Modeling of Materials</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Chemistry</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Core Science - Biochemistry I</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">General Chemistry</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Introduction to Solid State Chemistry</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Organic Chemistry</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">View more ... </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="has-children">
-                        <a href="http://codyhouse.co/?p=409">Biology</a>
-
-                        <ul class="is-hidden">
-
-                            <li><a href="http://codyhouse.co/?p=409">A Cultural and Scientific Survey of the Eye and Vision</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Autism and Related Disorders</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Biology</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Cognitive Neuroscience</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Core Science - Biochemistry I</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">Darwin's Legacy</a>
-                            </li>
-                            <li class="has-children"><a href="#0">Evolution, Ecology and Behavior</a>
-                            </li>
-                            <li><a href="http://codyhouse.co/?p=409">General Biology I</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </li>
